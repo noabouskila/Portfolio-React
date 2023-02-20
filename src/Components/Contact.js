@@ -1,89 +1,85 @@
-import React, { useState } from 'react'
+import React, { useRef, useState} from 'react'
+import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Contact() {
 
-
-  const [name , setName] = useState("");
-  const [email , setEmail] = useState("");
-  const [ message , setMessage] = useState("");
-
-
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-
+  const [msg, setMsg] = useState();
+  const form = useRef();
 
   const handleSubmit =(e)=>{
     e.preventDefault();
 
-    fetch("/contact@noabouskila.fr", {
-      method : "POST",
-      headers : {"Content-Type" : "application/x-www-form-urlencoded" },
-      body : encode({"form-name" :"contact" , name, email , message})
-    })
-    .then(()=>alert("Message envoyé!"))
-    .catch((error)=>alert("Erreur de type :" + error))
+    emailjs.sendForm('service_udqvbfo', 'template_oxvujtw', form.current, 'OVTiOG0SfqcoMcOR2')
+    .then((result) => {
+        console.log( "reussite d'envoi"+result.text);
+        setMsg(result.text);
+    }, (error) => {
+        console.log("erreur d'envoi"+ error.text);
+    });
   }
 
   return (
-    <div className='pb-20'>
-      <div className='justify-center text-2xl mb-2 flex items-end'>
-        <h2 className='mr-6 italic  font-bold'>Contact me !</h2>
+    <div id='Contact' className='pb-20' >
+      <div className='justify-center text-2xl flex items-end py-12'>
+        <h2 className='mr-6 italic font-bold '>Contact me !</h2>
         <FontAwesomeIcon icon={faPhoneVolume}/>
       </div>
 
+      {/* border-2 border-fuchsia-800 border-solid */}
 
-      <div>
-        <div></div>
+      <div className='flex flex-row justify-around'>
         <div>
-          <form name='contact' method='post' onSubmit={handleSubmit} data-netlify="true">
+          <img src='/img/img-contact.svg'  alt='contact-me' className='w-96'/>
+        </div>
 
-            <h2>Contactez-moi!</h2>
-            
-            {/* champs hidden netlify */}
-            <input type='hidden' name='form-name' value="contact"/>
+        <form ref={form} onSubmit={handleSubmit}
+        className='rounded-lg shadow-2xl shadow-fuchsia-900 p-4  w-2/5'
+        >
 
-            <div>
-              <label htmlFor='name'>Name</label>
-              <input
+          <h2 className='italic text-center mb-8' >Contactez-moi!</h2>
+
+          <div className='mb-6 flex flex-col'>
+            <label htmlFor='name'>Nom :</label>
+            <input
               type='text'
-                id='name'
-              name="name"
-              value={name}
-              onChange={(e) =>setName(e.target.value)} 
-              />
-            </div>
-            <div>
-              <label htmlFor='email'>Email</label>
-              <input
+              id='name'
+              name="from_name"
+            />
+          </div>
+
+          <div className='mb-6 flex flex-col'>
+            <label htmlFor='email'>Email :</label>
+            <input
               type='email'
-                id='email'
-               name="email"
-               value={email}
-              onChange={(e) =>setEmail(e.target.value)} 
-              />
-            </div>
-            <div>
-              <label htmlFor='message'>Votre Message</label>
-              <textarea 
+              id='email'
+              name="from_email"
+            />
+          </div>
+
+          <div className='mb-6 flex flex-col'>
+            <label htmlFor='message'>Message :</label>
+            <textarea 
               id='message'
               name='message'
-              value={message}
-              onChange={(e)=>setMessage(e.target.value)}>
-              </textarea>
-            </div>
+            >
+            </textarea>
+          </div>
 
-           <button type='submit'>Envoyer</button>
+          <div 
+           className='mb-6  rounded px-6 py-2 bg-gradient-to-l from-purple-700 to-blue-800 shadow-2xl flex justify-center w-1/3 m-auto' >
+          <input 
+            type='submit'
+            value="Envoyer"
+          />
+          </div>
+          
 
-          </form>
-        </div>
+          <p>{msg}</p>
+
+        </form>
       </div>
     </div>
 
