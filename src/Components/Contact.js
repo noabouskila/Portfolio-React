@@ -11,31 +11,25 @@ export default function Contact() {
   const [ message , setMessage] = useState("");
 
 
-  // function encode(data) {
-  //   return Object.keys(data)
-  //     .map(
-  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-  //     )
-  //     .join("&");
-  // }
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
 
 
   const handleSubmit =(e)=>{
     e.preventDefault();
 
-    const dataToSubmit = {name , email , message}
-
     fetch("/contact@noabouskila.fr", {
       method : "POST",
-      // headers : {"Content-Type" : "application/x-www-form-urlencoded" },
-      // body : encode({"form-name" :"contact" , name, email , message})
-      headers : {"Content-Type" : "application/json;charset=utf-8" },
-      body : JSON.stringify(dataToSubmit)
+      headers : {"Content-Type" : "application/x-www-form-urlencoded" },
+      body : encode({"form-name" :"contact" , name, email , message})
     })
-    // .then(()=>alert("Message envoyé!"))
-    // .catch((error)=>alert("Erreur de type :" + error))
-    .then(res =>res.json())
-    .then(res=>{console.log(res)})
+    .then(()=>alert("Message envoyé!"))
+    .catch((error)=>alert("Erreur de type :" + error))
   }
 
   return (
@@ -49,9 +43,13 @@ export default function Contact() {
       <div>
         <div></div>
         <div>
-          <form onSubmit={handleSubmit}>
+          <form name='contact' method='post' onSubmit={handleSubmit} data-netlify="true">
 
             <h2>Contactez-moi!</h2>
+            
+            {/* champs hidden netlify */}
+            <input type='hidden' name='form-name' value="contact"/>
+
             <div>
               <label htmlFor='name'>Name</label>
               <input
