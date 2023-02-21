@@ -7,7 +7,7 @@ import { faBriefcase, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 export default function Skills() {
   return (
     <div id="Skills" className='py-8 bg-slate-900 w-11/12 rounded-xl mx-auto mb-12'>
-      <div className='justify-center text-2xl mb-8 flex items-end'>
+      <div className='justify-center text-3xl my-12 flex items-end'>
         <h2 className='mr-6 italic  font-bold'>Compétences & Technologies</h2>
         <FontAwesomeIcon icon={faBriefcase}/>
       </div>

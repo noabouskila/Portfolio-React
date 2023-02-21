@@ -23,12 +23,10 @@ export default function Contact() {
 
   return (
     <div id='Contact' className='pb-20' >
-      <div className='justify-center text-2xl flex items-end py-12'>
-        <h2 className='mr-6 italic font-bold '>Contact me !</h2>
+      <div className='justify-center text-3xl flex items-end py-12'>
+        <h2 className='mr-6 italic font-bold '>Contactez-moi !</h2>
         <FontAwesomeIcon icon={faPhoneVolume}/>
       </div>
-
-      {/* border-2 border-fuchsia-800 border-solid */}
 
       <div className='flex flex-row justify-around'>
         <div>
