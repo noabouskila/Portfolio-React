@@ -24,20 +24,20 @@ export default function Contact() {
   return (
     <div id='Contact' className='pb-20' >
       <div className='justify-center text-3xl flex items-end py-12'>
-        <h2 className='mr-6 italic font-bold '>Contactez-moi !</h2>
+        <h2 className='mr-6 italic font-bold text-2xl '>Contactez-moi !</h2>
         <FontAwesomeIcon icon={faPhoneVolume}/>
       </div>
 
       <div className='flex flex-row justify-around'>
-        <div>
+        <div className='hidden md:block'>
           <img src='/img/img-contact.svg'  alt='contact-me' className='w-96'/>
         </div>
 
         <form ref={form} onSubmit={handleSubmit}
-        className='rounded-lg shadow-2xl shadow-fuchsia-900 p-4  w-2/5'
+        className='rounded-lg shadow-2xl shadow-fuchsia-900 p-4 w-4/5  md:w-2/5'
         >
 
-          <h2 className='italic text-center mb-8' >Contactez-moi!</h2>
+          {/* <h2 className='italic text-center mb-8' >Contactez-moi!</h2> */}
 
           <div className='mb-6 flex flex-col'>
             <label htmlFor='name'>Nom :</label>
@@ -45,6 +45,7 @@ export default function Contact() {
               type='text'
               id='name'
               name="from_name"
+              className='rounded'
             />
           </div>
 
@@ -54,6 +55,7 @@ export default function Contact() {
               type='email'
               id='email'
               name="from_email"
+              className='rounded'
             />
           </div>
 
@@ -62,12 +64,13 @@ export default function Contact() {
             <textarea 
               id='message'
               name='message'
+              className='rounded'
             >
             </textarea>
           </div>
 
           <div 
-           className='mb-6  rounded px-6 py-2 bg-gradient-to-l from-purple-700 to-blue-800 shadow-2xl flex justify-center w-1/3 m-auto' >
+           className='mb-6  rounded px-6 py-2 bg-gradient-to-l from-purple-700 to-blue-800 shadow-2xl flex justify-center md:w-1/3 m-auto' >
           <input 
             type='submit'
             value="Envoyer"

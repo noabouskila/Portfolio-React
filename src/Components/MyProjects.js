@@ -7,7 +7,7 @@ export default function MyProjects() {
   return (
     <div id="Projects"  className='py-20 bg-slate-900'>
       <div className='justify-center text-3xl my-12 flex items-end'>
-        <h2 className='mr-6 italic font-bold'>Mes Projets</h2>
+        <h2 className='mr-6 italic font-bold text-2xl'>Mes Projets</h2>
         <FontAwesomeIcon icon={faRocket}/>
       </div>
       
@@ -32,7 +32,7 @@ export default function MyProjects() {
                   <h1 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}
                   </h1>
-                  <p className="leading-relaxed">{project.description}</p>
+                  <p className="leading-relaxed text-sm md:text-lg">{project.description}</p>
                 </div>
               </div>
             </a>
