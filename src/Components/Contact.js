@@ -30,7 +30,7 @@ export default function Contact() {
 
       <div className='flex flex-row justify-around'>
         <div className='hidden md:block'>
-          <img src='/img/img-contact.svg'  alt='contact-me' className='w-96'/>
+          <img src='%PUBLIC_URL%/img/img-contact.svg'  alt='contact-me' className='w-96'/>
         </div>
 
         <form ref={form} onSubmit={handleSubmit}
