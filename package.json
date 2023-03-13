@@ -53,5 +53,15 @@
     "tailwindcss": "^3.2.6"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noabouskila/Portfolio-React.git"
+  },
+  "bugs": {
+    "url": "https://github.com/noabouskila/Portfolio-React/issues"
+  },
+  "homepage": "https://noabouskila.github.io/Portfolio-React"
+
+
 }
