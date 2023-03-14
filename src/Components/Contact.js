@@ -45,7 +45,7 @@ export default function Contact() {
               type='text'
               id='name'
               name="from_name"
-              className='rounded'
+              className='rounded text-slate-900'
               required
             />
           </div>
@@ -56,7 +56,7 @@ export default function Contact() {
               type='email'
               id='email'
               name="from_email"
-              className='rounded'
+              className='rounded text-slate-900'
               required
             />
           </div>
@@ -66,7 +66,7 @@ export default function Contact() {
             <textarea 
               id='message'
               name='message'
-              className='rounded'
+              className='rounded text-slate-900'
               required
             >
             </textarea>

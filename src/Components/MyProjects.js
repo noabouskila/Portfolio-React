@@ -38,7 +38,6 @@ export default function MyProjects() {
             </a>
           ))}
       </div>
-
     </div>
 
 
