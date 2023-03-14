@@ -15,7 +15,7 @@ export default function NavBar() {
   }
 
   return (
-    <nav className='flex flex-row  p-6 mb-4 justify-between'>
+    <nav className='flex flex-row  p-6 mb-4 justify-between items-end'>
        
         <a href='#About' className='font-bold italic text-2xl max-md:m-auto '>Noa Baroukh</a>
 
@@ -28,7 +28,7 @@ export default function NavBar() {
           </div>
 
           <div className={isMenuOpen ? "showMenuNav" : "hideMenuNav"} onClick={handleClick}>
-            <FontAwesomeIcon icon={faClose} className='text-violet-800' />
+            <FontAwesomeIcon icon={faClose} className='text-violet-800  pt-4 pr-4' />
 
 
             <ul className='flex flex-col text-3xl space-y-12  text-violet-800 w-full text-center '>

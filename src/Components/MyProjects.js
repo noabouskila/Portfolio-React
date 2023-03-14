@@ -5,8 +5,8 @@ import { faRocket } from '@fortawesome/free-solid-svg-icons'
 
 export default function MyProjects() {
   return (
-    <div id="Projects"  className='py-20 bg-slate-900'>
-      <div className='justify-center text-3xl my-12 flex items-end'>
+    <div id="Projects"  className='py-8 md:py-20 bg-slate-900'>
+      <div className='justify-center text-3xl my-4 md:my-12 flex items-end'>
         <h2 className='mr-6 italic font-bold text-2xl'>Mes Projets</h2>
         <FontAwesomeIcon icon={faRocket}/>
       </div>

@@ -8,7 +8,7 @@ import Cv from './Cv';
 export default function Skills() {
   return (
     <div id="Skills" className='py-8 mb-12'>
-      <div className='justify-center text-3xl my-12 flex items-end'>
+      <div className='justify-center text-3xl my-4 md:my-12 flex items-end'>
         <h2 className='mr-6 italic text-2xl font-bold'>Compétences <span className='hidden md:block'>& Technologies</span></h2>
         <FontAwesomeIcon icon={faBriefcase}/>
       </div>
