@@ -15,7 +15,7 @@ export default function Career() {
       <div className='flex px-6 justify-around '>
 
         <div className='hidden md:block md:w-1/2 md:-mt-10'>
-          <img src='/img/career-evolution.svg' alt='mon parcours pro'/>
+          <img src='https://noabouskila.github.io/Portfolio-React/img/career-evolution.svg' alt='mon parcours pro'/>
         </div>
 
         <div className='md:w-1/2  text-slate-900 font-semibold'>
