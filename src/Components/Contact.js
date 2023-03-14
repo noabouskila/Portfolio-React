@@ -46,6 +46,7 @@ export default function Contact() {
               id='name'
               name="from_name"
               className='rounded'
+              required
             />
           </div>
 
@@ -56,6 +57,7 @@ export default function Contact() {
               id='email'
               name="from_email"
               className='rounded'
+              required
             />
           </div>
 
@@ -65,6 +67,7 @@ export default function Contact() {
               id='message'
               name='message'
               className='rounded'
+              required
             >
             </textarea>
           </div>
