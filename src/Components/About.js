@@ -22,7 +22,7 @@ export default function About() {
           <img
             className="object-cover object-center rounded"
             alt="hero"
-            src="%PUBLIC_URL%/img/hero-pattern.svg"
+            src="/img/hero-pattern.svg"
           />
         </div>
 
