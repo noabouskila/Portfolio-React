@@ -36,7 +36,7 @@ export const projects = [
         subtitle: "Modal de connexion / Firebase",
         description:
           "Ici j'ai mis en place un modal de connexion avec des routes privées et publiques en connectant mon projet à Firebase.",
-        image: "/img/react-auth.png",
+        image: "img/react-auth.png",
         link: " https://noabouskila.github.io/React-authentification/",
     },
     {
@@ -44,7 +44,7 @@ export const projects = [
         subtitle: "Mise en place partielle de boutique E-commerce",
         description:
           "Ici , j'ai crée une boutique e-commerce de Mug avec React Router v6 et tout le systeme de mise a jour de l'état avec le panier ",
-        image: "/img/react-ecommerce.png",
+        image: "img/react-ecommerce.png",
         link: "https://noabouskila.github.io/React-ecommerce/",
     },
     {
@@ -52,7 +52,7 @@ export const projects = [
         subtitle: "Application de Notes",
         description:
           "Ici , jai crée une application pour la prise de note avec moyen d'enregistrer , ajouter et supprimer des notes et un filtre de recherche.",
-        image: "/img/react-appnote.png",
+        image: "img/react-appnote.png",
         link: " https://noabouskila.github.io/React-app-note/",
     },
     {
@@ -60,7 +60,7 @@ export const projects = [
         subtitle: "formulaire avec étapes de Validation",
         description:
           "Ici j'ai mis en place un pofmulaiire choix multiples avec plusieurs étapes de validation.",
-        image: "/img/react-multiStepValidation.png",
+        image: "img/react-multiStepValidation.png",
         link: " https://noabouskila.github.io/React-multi-stem-validation/",
     },
   ];
