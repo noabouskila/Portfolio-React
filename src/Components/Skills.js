@@ -13,12 +13,12 @@ export default function Skills() {
         <FontAwesomeIcon icon={faBriefcase}/>
       </div>
 
-      <div className="flex flex-wrap w-4/5  mx-auto mb-2 -mx-2">
+      <div className="flex flex-wrap w-11/12 md:w-4/5  mx-auto mb-2 -mx-2">
         {skills.map((skill) => (
-          <div key={skill} className="p-2 md:w-1/3  w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-            <FontAwesomeIcon icon={faCheckCircle} className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">
+          <div key={skill} className="p-2 md:w-1/3  w-1/2">
+            <div className="bg-gray-800 rounded flex p-2 md:p-4 h-full items-center">
+            <FontAwesomeIcon icon={faCheckCircle} className="text-green-400 w-4 md:w-6 h-6 flex-shrink-0 mr-4" />
+              <span className="title-font font-medium text-white text-sm md:text-lg ">
                 {skill}
               </span>
             </div>
