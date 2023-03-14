@@ -4,7 +4,7 @@ export const projects = [
       subtitle: "Animation React avec React Spring et react-router-dom V6 ",
       description:
         "Ici J'ai crée 3 formes d'animation différente au scroll , avec un dégradé de couleur et une animation qui s'ajoute au changment de l'etat #hooks",
-      image: "/img/react-animation.png",
+      image: "img/react-animation.png",
       link: "https://noabouskila.github.io/React-animation/",
     },
     {
@@ -12,7 +12,7 @@ export const projects = [
       subtitle: "Minuteur Chrono",
       description:
         "Ici , j'ai mis en place un minuteur chrono qui peut grace aux #hooks se reset et augmenter ou diminuer de quelques secondes au click",
-      image: "/img/react-chrono.png",
+      image: "img/react-chrono.png",
       link: "https://noabouskila.github.io/React-chrono/",
     },
     {
@@ -20,7 +20,7 @@ export const projects = [
       subtitle: "implementation API Unsplash ",
       description:
         "Ici j'ai crée un clone de Unsplash en appellant son API , avec un scroll infini et un systeme de filtre pour les photos",
-      image: "/img/react-unsplash.png",
+      image: "img/react-unsplash.png",
       link: "https://noabouskila.github.io/React-infiniteGallery/",
     },
     {
@@ -28,7 +28,7 @@ export const projects = [
       subtitle: "Graphiques React ",
       description:
         "Ici j'ai crée plusieurs formes de graphiques en fonction des résultats financiers et du nombre d'emploi dans un entreprise sur l'année 2020 et 2021",
-      image: "/img/react-dashboard.png",
+      image: "img/react-dashboard.png",
       link:  "https://noabouskila.github.io/React-dashboard/",
     },
     {

@@ -2,6 +2,7 @@ import React from 'react'
 import { skills } from "../data";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBriefcase, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import Cv from './Cv';
 
 
 export default function Skills() {
@@ -13,17 +14,21 @@ export default function Skills() {
       </div>
 
       <div className="flex flex-wrap w-4/5  mx-auto mb-2 -mx-2">
-          {skills.map((skill) => (
-            <div key={skill} className="p-2 md:w-1/3  w-full">
-              <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-              <FontAwesomeIcon icon={faCheckCircle} className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-                <span className="title-font font-medium text-white">
-                  {skill}
-                </span>
-              </div>
+        {skills.map((skill) => (
+          <div key={skill} className="p-2 md:w-1/3  w-full">
+            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+            <FontAwesomeIcon icon={faCheckCircle} className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
+              <span className="title-font font-medium text-white">
+                {skill}
+              </span>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
+
+      {/* import cv */}
+      <Cv/>
+      
 
     </div>
   )
