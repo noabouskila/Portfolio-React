@@ -15,7 +15,7 @@ export default function Footer() {
             <a href='https://github.com/noabouskila' target='blank'>
                 <FontAwesomeIcon icon={faSquareGithub}  className='fa-lg shadow-lg border-2 border-white border-solid rounded-full p-2'/>
             </a>
-           <a href='https://noabouskila.fr/' target='blank'>
+           <a href='https://noabouskila.github.io/Portfolio-React/' target='blank'>
                 <FontAwesomeIcon icon={faGlobe}  className='fa-lg shadow-lg border-2 border-solid border-white rounded-full p-2'/>
            </a>
            <a href='mailto:noabouskil@gmail.com' target='blank'>
