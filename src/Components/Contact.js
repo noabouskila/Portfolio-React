@@ -15,9 +15,10 @@ export default function Contact() {
     emailjs.sendForm('service_udqvbfo', 'template_oxvujtw', form.current, 'OVTiOG0SfqcoMcOR2')
     .then((result) => {
         console.log( "reussite d'envoi"+result.text);
-        setMsg(result.text);
+        setMsg("Message Envoyé! Je veindrai vers vous au plus vite !");
     }, (error) => {
         console.log("erreur d'envoi"+ error.text);
+        setMsg("erreur d'envoi"+error.text);
     });
   }
 
@@ -33,7 +34,7 @@ export default function Contact() {
           <img src='img/img-contact.svg'  alt='contact-me' className='w-96'/>
         </div>
 
-        <form ref={form} onSubmit={handleSubmit}
+        <form method='POST' ref={form} onSubmit={handleSubmit} encType='multipart/form-data'
         className='rounded-lg shadow-2xl shadow-fuchsia-900 p-4 w-4/5  md:w-2/5'
         >
 
