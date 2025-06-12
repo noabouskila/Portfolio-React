@@ -15,7 +15,7 @@ export default function Career() {
       <div className='flex justify-around px-6 '>
 
         <div className='hidden md:block md:w-1/2 md:-mt-10'>
-          <img src={process.env.PUBLIC_URL + 'img/career-evolution.svg' } alt='mon parcours pro'/>
+          <img src='img/career-evolution.svg'  alt='mon parcours pro'/>
         </div>
 
         <div className='text-sm font-semibold md:w-1/2 md:text-lg text-slate-900'>
