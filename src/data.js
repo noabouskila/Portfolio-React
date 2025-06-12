@@ -1,4 +1,20 @@
 export const projects = [
+  {
+    title: "Kollel Meiirim",
+    subtitle: "Animation React avec React Spring et react-router-dom V6 ",
+    description:
+      "Creation d'une appli web pour une association avec Next et Vercel et gestion du backend avec  Postgresql et Strapi en v2 ",
+    image: "img/kollel-meiirim.png",
+    link: "https://github.com/noabouskila/Kollel-Meirim",
+  },
+  {
+    title: "Dashboard Next Vercel",
+    subtitle: "Creation d'un Dashboard Next.js avec Vercel  pour les factures de l'application",
+    description:
+      "Creation d'un Dashboard pour gestion des factures  avec Next.js Vercel et Postgresql ",
+    image: "img/dashboard-next.png",
+    link: "https://dashboard-next-a4ox.vercel.app/",
+  },
     {
       title: "React Animation",
       subtitle: "Animation React avec React Spring et react-router-dom V6 ",
@@ -67,20 +83,24 @@ export const projects = [
   
   
   export const skills = [
-    "Html5",
-    "CSS3",
-    "Bootstrap",
-    "Tailwind",
-    "JavaScript",
+    "Next.js",
+    "vercel",
+    "PostgreSQL",
+    "Strapi",
     "TypeScript",
+    "JavaScript",
     "React",
     "Redux",
     "FireBase",
     "Api Rest",
+    "Html5",
+    "CSS3",
+    "Bootstrap",
+    "Tailwind",
+    "Git & GitHub",
     "Scrum Method",
     "LWC dev Salesforce",
-    "Sql ,MySql",
     "Adobe Xd",
-    "Canva",
+    "Figma"
   ];
   

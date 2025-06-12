@@ -5,53 +5,58 @@ import { faCode } from '@fortawesome/free-solid-svg-icons'
 
 export default function Career() {
   return (
-    <div id="Career" className=' py-8 md:py-20 text-center bg-violet-200 '>
+    <div id="Career" className='py-8 text-center md:py-20 bg-violet-200'>
        
-      <div className='justify-center text-3xl flex items-end mb-4 md:mb-12 '>
-        <h2 className='mr-6 italic text-2xl  font-bold text-slate-900'>Mon Parcours</h2>
+      <div className='flex items-end justify-center mb-4 text-3xl md:mb-12 '>
+        <h2 className='mr-6 text-2xl italic font-bold text-slate-900'>Mon Parcours</h2>
         <FontAwesomeIcon icon={faCode} color='black'/>
       </div>
 
-      <div className='flex px-6 justify-around '>
+      <div className='flex justify-around px-6 '>
 
         <div className='hidden md:block md:w-1/2 md:-mt-10'>
           <img src='img/career-evolution.svg' alt='mon parcours pro'/>
         </div>
 
-        <div className='md:w-1/2 text-sm md:text-lg text-slate-900 font-semibold'>
+        <div className='text-sm font-semibold md:w-1/2 md:text-lg text-slate-900'>
 
-          <div className=' flex flex-col md:flex-row my-2 md:my-4  justify-between border-white/50 border-solid border-b-2 rounded-lg md:p-4 shadow-2xl px-4 w-full bg-fuchsia-400/50'>
-            <span className='font-bold italic'>2020</span>
+          <div className='flex flex-col justify-between w-full px-4 my-2 border-b-2 border-solid rounded-lg shadow-2xl md:flex-row md:my-4 border-white/50 md:p-4 bg-fuchsia-400/50'>
+            <span className='italic font-bold'>2020</span>
             <p>Certification Intégration Web SocialBuilder.</p>
           </div>
 
-          <div className='flex flex-col md:flex-row my-2 md:my-4 justify-between border-white/50 border-solid border-b-2  rounded-lg  md:p-4  shadow-2xl px-4 w-full bg-fuchsia-400/50'>
-            <span className='font-bold italic'>2020</span> 
+          <div className='flex flex-col justify-between w-full px-4 my-2 border-b-2 border-solid rounded-lg shadow-2xl md:flex-row md:my-4 border-white/50 md:p-4 bg-fuchsia-400/50'>
+            <span className='italic font-bold'>2020</span> 
             <p>Stage Développeuse web chez Taeho Conseil.</p>
 
           </div>
 
-          <div className=' flexflex-col md:flex-row my-2 md:my-4justify-between border-white/50 border-solid border-b-2  rounded-lg  md:p-4 shadow-2xl px-4 w-full bg-fuchsia-400/50 '>
-            <span className='font-bold italic'>2021</span>
+          <div className='w-full px-4 my-2 border-b-2 border-solid rounded-lg shadow-2xl flexflex-col md:flex-row md:my-4justify-between border-white/50 md:p-4 bg-fuchsia-400/50'>
+            <span className='italic font-bold'>2021</span>
             <p>Bac+3 Chef de Projet & Dev Full-Stack chez Doranco.</p>
           </div>
 
 
-          <div className=' flex flex-col md:flex-row my-2 md:my-4 justify-between border-white/50 border-solid border-b-2  rounded-lg  md:p-4 shadow-2xl px-4 w-full bg-fuchsia-400/50'>
-            <span className='font-bold italic'>2022</span>
+          <div className='flex flex-col justify-between w-full px-4 my-2 border-b-2 border-solid rounded-lg shadow-2xl md:flex-row md:my-4 border-white/50 md:p-4 bg-fuchsia-400/50'>
+            <span className='italic font-bold'>2022</span>
             <p>Stage Développeuse & gestion de projet chez LMDK.</p>
           </div>
 
-          <div className=' flex flex-col md:flex-row my-2 md:my-4 justify-between border-white/50 border-solid border-b-2 rounded-lg  md:p-4  shadow-2xl px-4 w-full bg-fuchsia-400/50 '>
-            <span className='font-bold italic'>2023</span>
+          <div className='flex flex-col justify-between w-full px-4 my-2 border-b-2 border-solid rounded-lg shadow-2xl md:flex-row md:my-4 border-white/50 md:p-4 bg-fuchsia-400/50'>
+            <span className='italic font-bold'>2023-24</span>
             <p>Bac+4 Diplome Dev React/JS chez OpenClassrooms.</p>
           </div>
 
-          <div className=' flex flex-col md:flex-row my-2 md:my-4 justify-between border-white/50 border-solid border-b-2  rounded-lg  md:p-4  shadow-2xl px-4 w-full bg-fuchsia-400/50'>
-            <span className='font-bold italic'>2023</span>
+          <div className='flex flex-col justify-between w-full px-4 my-2 border-b-2 border-solid rounded-lg shadow-2xl md:flex-row md:my-4 border-white/50 md:p-4 bg-fuchsia-400/50'>
+            <span className='italic font-bold'>2023-24</span>
             <p>Dev React & LWC Salesforce chez PSM Consulting.</p>
           </div>
 
+          <div className='flex flex-col justify-between w-full px-4 my-2 border-b-2 border-solid rounded-lg shadow-2xl md:flex-row md:my-4 border-white/50 md:p-4 bg-fuchsia-400/50'>
+            <span className='italic font-bold'>2025</span>
+            <p>Certif Udemy Next.js / ts + Vercel</p>
+          </div>
+ 
         </div>
 
       </div>

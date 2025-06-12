@@ -2,12 +2,13 @@ import React from 'react'
 
 export default function Cv() {
   return (
-    <div className='flex flex-col  mt-12 h-52  md:h-96 mx-auto '>
-      <h3 className='italic text-xl font-semibold mb-6 text-center'> Mon CV Dev Front-end</h3>
-      <a href='https://imagizer.imageshack.com/img922/8884/BWeLE6.jpg' >
-        <img className='peer rounded shadow-xl hover:bg-slate-700/50 hover:opacity-10 cursor:pointor absolute w-9/12 ml-8 md:ml-32 object-cover object-top h-52 md:h-96' src='https://noabouskila.github.io/Portfolio-React/img/CVNOA2023.jpg' alt="CV NOA BOUSKILA BAROUKH 2023"/>
-        <span className='opacity-0 peer-hover:opacity-100 font-bold relative left-12 md:top-32  md:left-96 z-10 w-full text-sm md:text-xl'>Clickez pour visualiser.</span>
+    <div className='flex flex-col mx-auto mt-12 h-52 md:h-96 '>
+      <h3 className='mb-6 text-xl italic font-semibold text-center'> Mon CV Dev React / Next.js</h3>
+      <a href='https://www.canva.com/design/DAGgBShAl6M/xXAFE6IsBBUsn5NNCy8xlA/view?utm_content=DAGgBShAl6M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h55ec6924e1' >
+        <img className='absolute object-cover object-top w-9/12 ml-8 rounded shadow-xl peer hover:bg-slate-700/50 hover:opacity-10 cursor:pointor md:ml-32 h-52 md:h-96' src='https://www.canva.com/design/DAGgBShAl6M/xXAFE6IsBBUsn5NNCy8xlA/view?utm_content=DAGgBShAl6M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h55ec6924e1' alt="CV NOA BOUSKILA BAROUKH 2025"/>
+        <span className='relative z-10 w-full text-sm font-bold opacity-0 peer-hover:opacity-100 left-12 md:top-32 md:left-96 md:text-xl'>Clickez pour visualiser.</span>
       </a>
     </div>
   )
 }
+
