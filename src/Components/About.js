@@ -23,9 +23,10 @@ export default function About() {
           <img
             className="object-cover object-center rounded"
             alt="hero"
-            src="img/hero-pattern.svg"
+          src={process.env.PUBLIC_URL + "img/hero-pattern.svg"}
           />
         </div>
+        
 
       </div>
 

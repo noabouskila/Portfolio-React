@@ -15,7 +15,7 @@ export default function Career() {
       <div className='flex justify-around px-6 '>
 
         <div className='hidden md:block md:w-1/2 md:-mt-10'>
-          <img src='img/career-evolution.svg' alt='mon parcours pro'/>
+          <img src={process.env.PUBLIC_URL + 'img/career-evolution.svg' } alt='mon parcours pro'/>
         </div>
 
         <div className='text-sm font-semibold md:w-1/2 md:text-lg text-slate-900'>
@@ -31,7 +31,7 @@ export default function Career() {
 
           </div>
 
-          <div className='w-full px-4 my-2 border-b-2 border-solid rounded-lg shadow-2xl flexflex-col md:flex-row md:my-4justify-between border-white/50 md:p-4 bg-fuchsia-400/50'>
+          <div className='flex flex-col justify-between w-full px-4 my-2 border-b-2 border-solid rounded-lg shadow-2xl md:flex-row md:my-4 border-white/50 md:p-4 bg-fuchsia-400/50'>
             <span className='italic font-bold'>2021</span>
             <p>Bac+3 Chef de Projet & Dev Full-Stack chez Doranco.</p>
           </div>

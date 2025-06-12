@@ -24,23 +24,23 @@ export default function Contact() {
 
   return (
     <div id='Contact' className='pb-20' >
-      <div className='justify-center text-3xl flex items-end py-12'>
-        <h2 className='mr-6 italic font-bold text-2xl '>Contactez-moi !</h2>
+      <div className='flex items-end justify-center py-12 text-3xl'>
+        <h2 className='mr-6 text-2xl italic font-bold '>Contactez-moi !</h2>
         <FontAwesomeIcon icon={faPhoneVolume}/>
       </div>
 
       <div className='flex flex-row justify-around'>
         <div className='hidden md:block'>
-          <img src='img/img-contact.svg'  alt='contact-me' className='w-96'/>
+          <img src={process.env.PUBLIC_URL + 'img/img-contact.svg'}  alt='contact-me' className='w-96'/>
         </div>
 
         <form method='POST' ref={form} onSubmit={handleSubmit} encType='multipart/form-data'
-        className='rounded-lg shadow-2xl shadow-fuchsia-900 p-4 w-4/5  md:w-2/5'
+        className='w-4/5 p-4 rounded-lg shadow-2xl shadow-fuchsia-900 md:w-2/5'
         >
 
-          {/* <h2 className='italic text-center mb-8' >Contactez-moi!</h2> */}
+          {/* <h2 className='mb-8 italic text-center' >Contactez-moi!</h2> */}
 
-          <div className='mb-6 flex flex-col'>
+          <div className='flex flex-col mb-6'>
             <label htmlFor='name'>Nom :</label>
             <input
               type='text'
@@ -51,7 +51,7 @@ export default function Contact() {
             />
           </div>
 
-          <div className='mb-6 flex flex-col'>
+          <div className='flex flex-col mb-6'>
             <label htmlFor='email'>Email :</label>
             <input
               type='email'
@@ -62,7 +62,7 @@ export default function Contact() {
             />
           </div>
 
-          <div className='mb-6 flex flex-col'>
+          <div className='flex flex-col mb-6'>
             <label htmlFor='message'>Message :</label>
             <textarea 
               id='message'
@@ -74,7 +74,7 @@ export default function Contact() {
           </div>
 
           <div 
-           className='mb-6  rounded px-6 py-2 bg-gradient-to-l from-purple-700 to-blue-800 shadow-2xl flex justify-center md:w-1/3 m-auto' >
+           className='flex justify-center px-6 py-2 m-auto mb-6 rounded shadow-2xl bg-gradient-to-l from-purple-700 to-blue-800 md:w-1/3' >
           <input 
             type='submit'
             value="Envoyer"

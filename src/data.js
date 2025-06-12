@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "Animation React avec React Spring et react-router-dom V6 ",
     description:
       "Creation d'une appli web pour une association avec Next et Vercel et gestion du backend avec  Postgresql et Strapi en v2 ",
-    image: "img/kollel-meiirim.png",
+    image: "img/Kollel-Meiirim.png",
     link: "https://github.com/noabouskila/Kollel-Meirim",
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     subtitle: "Creation d'un Dashboard Next.js avec Vercel  pour les factures de l'application",
     description:
       "Creation d'un Dashboard pour gestion des factures  avec Next.js Vercel et Postgresql ",
-    image: "img/dashboard-next.png",
+    image: "img/Dashboard-Next.png",
     link: "https://dashboard-next-a4ox.vercel.app/",
   },
     {
@@ -91,7 +91,6 @@ export const projects = [
     "JavaScript",
     "React",
     "Redux",
-    "FireBase",
     "Api Rest",
     "Html5",
     "CSS3",
