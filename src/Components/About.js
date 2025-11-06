@@ -10,9 +10,9 @@ export default function About() {
       <div className='flex items-center justify-around '>
 
         <div className='z-40 flex flex-col items-center w-11/12 md:w-2/5 md:p-5 md:items-start '> 
-          <h1 className='mb-8 text-2xl italic font-semibold text-center md:text-start md:text-5xl '>Bienvenue <br></br> dans mon <span className='font-bold text-fuchsia-900'>Portfolio.</span></h1>
+          <h1 className='mb-8 text-2xl italic font-semibold text-center md:text-start md:text-5xl '>Noâ Baroukh <br></br>  <span className='font-bold text-fuchsia-900'> Développeuse React / Next.js</span></h1>
 
-          <h2 className='mb-8 text-lg text-center md:text-start md:text-xl sm:w-10/12'>Salut , je m'appelle <span className='font-bold text-fuchsia-900'>Noâ</span> <br></br> et je suis développeuse  React / Next.js </h2>
+          <h2 className='mb-8 text-lg text-center md:text-start md:text-xl sm:w-10/12'>Découvrez mon <span className='font-bold text-fuchsia-900'> Stack</span> <br></br> et mes projets  </h2>
 
           <p className='hidden md:text-xl md:mb-20 md:italic'><span className='font-bold text-fuchsia-900'>Ici ,</span> tu pourras avoir un aperçu mes compétences, quelques uns de mes projets et mes experiences.</p>
 
