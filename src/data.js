@@ -85,13 +85,16 @@ export const projects = [
   
   export const skills = [
     "Next.js",
-    "vercel",
-    "PostgreSQL",
+    "React",
     "TypeScript",
     "JavaScript",
-    "React",
     "Redux",
     "Api Rest",
+    "vercel",
+    "PostgreSQL",
+    "NoSql",
+    "MongoDB",
+    "Prisma ORM",
     "Html5",
     "CSS3 - SASS - CLSX",
     "Bootstrap",
@@ -101,7 +104,7 @@ export const projects = [
     "Scrum Method",
     "LWC dev Salesforce",
     "Adobe Xd",
-    "Figma", 
-    'trello'
+    "Figma",
+    "trello",
   ];
   
